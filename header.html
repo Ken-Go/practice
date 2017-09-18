@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html";chatset="utf-8"/>
+        <title><?php
+            //turn on output buffering;
+            ob_start();
+
+            if(defined('TITLE')){
+                print TITLE;
+            }else{
+                print 'Elliott Smith Fan Club';
+            }
+        ?>
+        </title>
+        <style type="text/css">
+            body {
+                margin: 0px;
+                background:#333;
+            }
+            #leftcontent{
+                float: left;
+                width: 60%;
+                height: 550px;
+                background: #ddd;
+                border-right: 2px solid #000;
+                border-bottom: 20x solid #000;
+                margin-right: 15px;
+                padding-bottom: 20px;
+            }
+            p,h1,pre{
+                margin: 0px 30px 10px 30px;
+            }
+            h1 {
+                font-size: 14px;
+                padding-top: 10px;
+            }
+            #rightcontent p{
+                font-size: 14px;
+                margin-left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="leftcontent">
+        <!-- script 1 - header.html -->
